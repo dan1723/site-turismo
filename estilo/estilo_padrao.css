@@ -1,0 +1,68 @@
+/*CONFIGURAÇÃO GLOBAL*/
+
+@charset "UTF-8";
+
+:root {
+    --cor0: #538ee6;
+    --cor1: #1A23E0;
+    --cor2: #06367e;
+    --cor3: #34E04B;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+/*CONFIGURAÇÃO DO BODY*/
+body{
+    background-image: url(../imagens/cidade_de_Promissão.webp);
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+/*CONFIGURAÇÃO DO HEADER*/
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    padding: 30px;
+
+}
+
+header h1{
+    text-align: center;
+    color: rgb(236, 226, 226);
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 45px;
+    text-shadow: 1px 1px 4px;    
+}
+
+header p{
+    padding-top: 10px;
+    color: white;
+    text-align: justify;
+}
+
+
+/*CONFIGURAÇÕES DO MAIN*/
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+
+ul li{
+    
+}
