@@ -79,24 +79,50 @@
 </div>
 <br>
 <div>
-  <h3>📸 Screenshots</h3>
+  <h3>📸Capturas de tela</h3>
 
   ![image](https://github.com/user-attachments/assets/9f2adc93-2bb4-4de5-8f9d-38183481e007)
+  <h4>📝 Página Inicial – Site de Turismo de Promissão-SP</h4>
+  <p>A homepage apresenta um layout moderno com chamadas visuais atrativas. Nela, os visitantes encontram acesso rápido aos principais atrativos turísticos da cidade, rotas, eventos e informações institucionais.</p>
+<br>
+<br>
+<br>
 
   ![image](https://github.com/user-attachments/assets/f9ea4632-99de-4408-8c17-f59c638f0166)
+  <h4>🌄 Página de Pontos Turísticos que Lista as Fazendas que Vendem Frutas</h4>
+  <p>Esta sessão foi retirada do projeto. Será feita uma página no site dedicada a cadastrar todos os produtores rurais das agrovilas da região que cultivam e vendem frutas típicas e que as vezes são raras de achar nos centros urbanos, serão incluído também mapas com as rotas e os endereços dos produtores rurais para que as pessoas possam fazer trilhas e passeios e aproveitar para comprar as frutas direto com os fornecedores.</p>
+  <br>
+  <br>
+  <br>
 
   ![image](https://github.com/user-attachments/assets/db45b07b-f586-4745-8e13-7db9c3c5a0a9)
+  <h4>🍇 Mapa - Rota das Frutas</h4>
+  <p>Esta rota apresenta os produtores rurais locais e suas culturas de frutas típicas, como uva, banana, tamarindo, entre outras. O objetivo é incentivar o turismo rural e criar uma conexão entre visitantes e agricultura familiar.</p>
+  <br>
+  <br>
+  <br>
 
   ![image](https://github.com/user-attachments/assets/24988681-8943-4e55-93dc-eaa47e13186a)
-
-  ![image](https://github.com/user-attachments/assets/791ef4ba-2ee7-4646-8756-4358a4057ff6)
+  <h4>🍴 Página da Rota Gastronômica</h4>
+  <p>Mostra os estabelecimentos locais que oferecem produtos regionais como queijos, licores, bolachas caseiras, cafés coloniais e refeições típicas. Um convite à experiência culinária de Promissão.</p>
+  <br>
+  <br>
+  <br>
 
   ![image](https://github.com/user-attachments/assets/06a11e63-c2f1-4cbd-98aa-95ae7c964318)
-
-
-
-
-  
-
-
+  <h4>🛐 Página do Turismo Religioso e Histórico</h4>
+  <p>Rota que contempla igrejas centenárias, capelas e o roteiro da imigração japonesa. É ideal para peregrinações, caminhadas religiosas e visitas culturais.</p>
 </div>
+<br>
+<div>
+  <h3>📄 Licença</h3>
+  <p>Este projeto é de uso institucional e educacional, desenvolvido como parte de um estágio. Caso deseje contribuir, entre em contato.</p>
+</div>
+<br>
+<div>
+  <h3>👨‍💻 Desenvolvedor</h3>
+  <strong><p>Danilo Fernandes Gomes</p></strong>
+  <p><a href="https://www.linkedin.com/in/danilo-fernandes-67242b1a7/">Linkedin</a></p>
+  <p>Tecnólogo em Análise e Desenvolvimento de Sistemas (FATEC Lins)</p>
+</div>
+
