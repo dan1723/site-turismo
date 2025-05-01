@@ -38,6 +38,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+/*****************************************************************************************/
 
 
 
@@ -46,6 +47,7 @@ body {
   background-color: var(--cor0);
   font-family: var(--fonte-padrao);
 }
+/*****************************************************************************************/
 
 
 
@@ -75,6 +77,8 @@ header p {
   text-align: justify;
   font-size: 1.2em;
 }
+/*****************************************************************************************/
+
 
 
 /*CONFIGURAÇÃO DO MENU E SUBMENU*/
@@ -116,11 +120,13 @@ header p {
 }
 
 .drop-hover{
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
 }
 
 .drop-hover .drop{
-  position: absolute;
+  /* position: absolute; */
   background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
   width: 100%;
   height: 0;
@@ -135,6 +141,8 @@ header p {
 .drop-hover:hover .drop{
   height: 1000px;
 }
+/*****************************************************************************************/
+
 
 
 /*CONFIGURAÇÕES DO MAIN*/
@@ -213,6 +221,9 @@ div.video > iframe{
   width: 90%;
   height: 90%;
 }
+/*****************************************************************************************/
+
+
 
 
 /*CONFIGURAÇÕES DO FOOTER*/
@@ -245,6 +256,6 @@ div.footer-texto > p.slogan{
   position: relative;
   bottom: 3.5vh;
 }
-
+/*****************************************************************************************/
 
 
