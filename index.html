@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Secretária do Turismo</title>
     <link rel="stylesheet" href="css/estilo_padrao.css">
-
+    <script src="js/sub-menu.js"></script>
 </head>
 
 <body>
@@ -20,35 +20,51 @@
             culinárias e os pratos típicos da nossa região, enquanto explora tudo o que a cidade tem a oferecer.
         </p>
 
-        <div class="btn-social">
-            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-            <a href="#"><button><i class="bi bi-whatsapp"></i></i></button></a>
-            <a href="#"><button><i class="bi bi-facebook"></i></button></a>
-        </div>
-
         <section class="bottom-header">
             <div class="interface">
 
-                <nav>
-                    <ul>
-                        <li><a href="#">Página Inicial</a></li>
-                        <li class="drop-hover"><a href="#">Menu<i class="bi bi-caret-down-fill"></i></a>
-                            <div class="drop">
-                                <a href="conselhoMunicipaldeTurismo.html" target="_self">Conselho Municipal do Turismo</a>
-                                <a href="mapaTurísticoUrbano.html" target="_self">Mapa Turístico Urbano</a>
-                                <a href="alugueisDeRanchos&Pousadas.html" target="_self">Alugueis de Ranchos e Pousadas</a>
-                                <a href="meiosdeHospedagem.html" target="_self">Meios de Hospedagem</a>
-                                <a href="calendáriodeEventos.html" target="_self">Calendário de Eventos</a>
-                                <a href="rotaDasFrutas.html" target="_self">Rota das Frutas</a>
-                                <a href="rotaGastronomica.html" target="_self">Rota Gastronomica</a>
-                                <a href="rotaDaImigraçãoJaponesa.html" target="_self">Rota da Imigração Japonesa</a>
-                                <a href="rotaDaPeregrinacao.html" target="_self">Rota da Peregrinação (turismo religioso)</a>
-                                <a href="rotaTuristicaDosRios.html" target="_self">Rota Turistica dos Rios, Cachoeiras, Correntezas e Parques Ambientais</a>
-                                <a href="#" target="_self">Feira da agricultura Familiar e Artezanato</a>
+                <nav class="navbar">
+                    <ul class="menu" id="main-menu">
+                        <li>
+                            <a href="#">Página Inicial</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">Menu</a>
+                            <div class="dropdown">
+                                <div class="dropdown-column">
+                                    <h4>Alugueis, Hospedagens & Eventos</h4>
+                                    <ul>
+                                        <li><a href="pages/magiaNatalina.html" target="_self">Alugueis de Ranchos e Pousadas</a></li>
+                                        <li><a href="pages/meiosdeHospedagem.html" target="_self">Meios de Hospedagem</a></li>
+                                        <li><a href="pages/calendárioDeEventos.html" target="_self">Calendário de Eventos</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h4>Passeios Cultarias, Entretenimento e Gastronomica</h4>
+                                    <ul>
+                                        <li><a href="pages/rotaDasFrutas.html" target="_self">Rota das Frutas</a></li>
+                                        <li><a href="pages/rotaGastronomica.html" target="_self">Rota Gastronômica</a></li>
+                                        <li><a href="pages/rotaDaImigraçãoJaponesa.html" target="_self">Rota da Imigração Japonesa</a></li>
+                                        <li><a href="pages/rotaDaPeregrinacao.html" target="_self">Rota da Peregrinação (turismo religioso)</a></li>
+                                        <li><a href="pages/rotaTuristicaDosRios.html" target="_self">Rota Turistica dos Rios, Cachoeiras, Correntezas e Parques Ambientais</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-column">
+                                    <h4>Mapas Turisticos, Ferias e Artesanato</h4>
+                                    <ul>
+                                        <li><a href="pages/mapasTurismoUrbano.html" target="_self">Mapa Turístico Urbano</a></li>
+                                        <li><a href="pages/mapasTurismoRural.html" target="_self">Atrações</a>Mapa Turístico Rural</li>
+                                        <li><a href="pages/feiraArtesanato.html" target="_self">Feira da agricultura Familiar e Artezanato</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li><a href="#">Galeria de Fotos</a></li>
-                        <li><a href="#">Sobre</a></li>
+                        <li>
+                            <a href="pages/conselhoMunicipalTurismo.html" target="_self">Conselho Municipal do Turismo</a>
+                        </li>
+                        <li>
+                            <a href="pages/galeriaFotos.html">Galeria de Fotos</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -60,51 +76,62 @@
             <h1>A História de Promissão</h1>
             <br>
             <h2>O Nascimento de Promissão: De Hector Legru à Fundação Oficial</h2>
-            <p>A história de <a href="https://www.promissao.sp.gov.br/" target="_blank" class="externo">Promissão</a>, no interior do estado de <a href="https://capital.sp.gov.br/" target="_blank" class="externo">São Paulo</a>, é uma narrativa de crescimento, superação e
+            <p>A história de <a href="https://www.promissao.sp.gov.br/" target="_blank" class="externo">Promissão</a>,
+                no interior do estado de <a href="https://capital.sp.gov.br/" target="_blank" class="externo">São
+                    Paulo</a>, é uma narrativa de crescimento, superação e
                 transformação. Suas raízes remontam ao século XIX, quando a região ainda era dominada por vastas matas e
                 terras selvagens, habitadas por tribos indígenas. Foi no contexto da expansão do ciclo do café que a
                 área começou a ser gradualmente desbravada e colonizada, atraindo pioneiros em busca de novas terras
                 férteis.</p>
 
             <p>O marco inicial da cidade remonta ao início do século XX, com <strong>
-                a fundação da Estação Ferroviária Hector
+                    a fundação da Estação Ferroviária Hector
                     Legru
-            </strong>, em 1908, nome dado em homenagem ao banqueiro e investidor <a href="https://blogdogiesbrecht.blogspot.com/2011/01/quem-foi-hector-legru.html" target="_blank" class="externo">Hector Legru</a>, que desempenhou papel
+                </strong>, em 1908, nome dado em homenagem ao banqueiro e investidor <a
+                    href="https://blogdogiesbrecht.blogspot.com/2011/01/quem-foi-hector-legru.html" target="_blank"
+                    class="externo">Hector Legru</a>, que desempenhou papel
                 essencial no financiamento da Estrada de Ferro Noroeste do Brasil. A inauguração da estação foi um ponto
                 de inflexão para o desenvolvimento local, uma vez que facilitou o escoamento da produção agrícola da
-                região e atraiu imigrantes, especialmente <strong>japoneses e italianos</strong>, que se dedicaram ao cultivo do café,
+                região e atraiu imigrantes, especialmente <strong>japoneses e italianos</strong>, que se dedicaram ao
+                cultivo do café,
                 principal cultura da época.</p>
 
-            <p>A cidade, inicialmente chamada <strong>Hector Legru</strong>, começou a se organizar ao redor da estação e, no ano de
+            <p>A cidade, inicialmente chamada <strong>Hector Legru</strong>, começou a se organizar ao redor da estação
+                e, no ano de
                 1915, tornou-se um polo agrícola emergente. A presença de imigrantes e a construção de colônias
-                agrícolas, como a <strong>Colônia de Itacolomí</strong>, fundada pelo pioneiro japonês <a href="https://www.progresso.com.br/noticias/dr-shuhei-uyetsuka-pai-da-imigracao-japonesa-no-brasil-passados-110-anos/338635/" target="_blank" class="externo">Shuhei Uetsuka</a>, foram vitais para
+                agrícolas, como a <strong>Colônia de Itacolomí</strong>, fundada pelo pioneiro japonês <a
+                    href="https://www.progresso.com.br/noticias/dr-shuhei-uyetsuka-pai-da-imigracao-japonesa-no-brasil-passados-110-anos/338635/"
+                    target="_blank" class="externo">Shuhei Uetsuka</a>, foram vitais para
                 a transformação da localidade, consolidando a região como um centro agrícola promissor.</p>
 
             <p>No entanto, o nome Hector Legru não perdurou. Em <strong>
-                30 de setembro de 1921, por meio da <a href="https://www.al.sp.gov.br/repositorio/legislacao/lei/1921/lei-1787A-30.09.1921.html" target="_blank" class="externo">
-                    Lei Estadual nº
+                    30 de setembro de 1921, por meio da <a
+                        href="https://www.al.sp.gov.br/repositorio/legislacao/lei/1921/lei-1787A-30.09.1921.html"
+                        target="_blank" class="externo">
+                        Lei Estadual nº
                         1.787-A
-                </a>, a cidade passou a se chamar <span class="highlight">Promissão</span>
-            </strong>, um nome que refletia as
+                    </a>, a cidade passou a se chamar <span class="highlight">Promissão</span>
+                </strong>, um nome que refletia as
                 aspirações de seus fundadores. O nome, originado da palavra "promissão", fazia alusão a uma promessa de
                 prosperidade e sucesso para a região, simbolizando a esperança de crescimento e conquistas de seus
                 habitantes.</p>
 
-                <br>
-                <picture>
-                    <source media="(max-width: 670px)" srcset="imagens/cidade_de_Promissão.webp">
-                    <img src="imagens/cidade_de_Promissão.webp" alt="Cidade de Promissâo">
-                </picture>
-                
+            <br>
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/cidade_de_Promissão.webp">
+                <img src="imagens/cidade_de_Promissão.webp" alt="Cidade de Promissâo">
+            </picture>
+
         </section>
 
         <section>
             <br>
             <h2>A Consolidação e os Desafios do Desenvolvimento</h2>
-            <p>O crescimento de Promissão, agora já com o nome definitivo, continuou ao longo das décadas seguintes. <strong>
-                Em
+            <p>O crescimento de Promissão, agora já com o nome definitivo, continuou ao longo das décadas seguintes.
+                <strong>
+                    Em
                     1923, a cidade alcançou a categoria de município
-            </strong>, desmembrando-se do município de Penápolis. Nesse
+                </strong>, desmembrando-se do município de Penápolis. Nesse
                 período, a economia local se baseava principalmente no cultivo de café, e a cidade prosperava sob o
                 comando de imigrantes que introduziram novas técnicas agrícolas e expandiram as fronteiras das colônias.
                 A agricultura intensiva e o cultivo do café transformaram Promissão em uma das principais áreas
@@ -119,7 +146,9 @@
             <h2>A Transição para a Cana-de-Açúcar e a Pecuária</h2>
             <p>Durante a segunda metade do século XX, Promissão experimentou uma transição econômica significativa. A
                 produção de cana-de-açúcar se tornou um dos pilares da economia local, com a instalação de usinas de
-                açúcar e álcool que prosperaram durante o <a href="https://brasilescola.uol.com.br/brasil/proalcool.htm" target="_blank" class="externo">Proálcool</a> – <strong>o Programa Nacional do Álcool</strong>, que estimulou a
+                açúcar e álcool que prosperaram durante o <a href="https://brasilescola.uol.com.br/brasil/proalcool.htm"
+                    target="_blank" class="externo">Proálcool</a> – <strong>o Programa Nacional do Álcool</strong>, que
+                estimulou a
                 produção de etanol. A agricultura da cana-de-açúcar não apenas revitalizou o setor, mas também
                 contribuiu para a crescente importância de Promissão no contexto da indústria sucroalcooleira.</p>
 
@@ -147,18 +176,22 @@
                 sucesso no interior de São Paulo.</p>
         </section>
         <br>
-        <h2 class="title-video">Veja o quanto Promissão evoluiu e o quanto ainda tem a conquistar – Assista ao Vídeo!</h2>
+        <h2 class="title-video">Veja o quanto Promissão evoluiu e o quanto ainda tem a conquistar – Assista ao Vídeo!
+        </h2>
         <br>
         <div class="video">
-            <iframe width="560" height="315" src="videos/VID-20250301-WA0019.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="videos/VID-20250301-WA0019.mp4" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </main>
     <footer>
         <!-- LOGO DO RODAPÉ -->
-         <div class="logo">
+        <div class="logo">
             <img src="logo de Promissâo.png" alt="Brasão da Prefeitura" class="logo">
-         </div>
-         <!-- FIM LOGO RODAPÉ -->
+        </div>
+        <!-- FIM LOGO RODAPÉ -->
 
         <div class="footer-texto">
             <h2><strong>Departamento do Turismo de Promissão</strong></h2>
@@ -168,17 +201,17 @@
             <p class="corpo-texto">
                 Avenida Pedro de Toledo, 386 - Centro <br>
                 Promissão - SP, CEP: 16370-051 <br>
-                <a class="footer-p"
-                    href="mailto:turismo@promissao.sp.gov.br">turismo@promissao.sp.gov.br
+                <a class="footer-p" href="mailto:turismo@promissao.sp.gov.br">turismo@promissao.sp.gov.br
                 </a><br>
                 Telefone: (14) 3543-9000 <br>
                 Horario de funcionamento: Segunda à sexta - das 08:30h às 11:00h e das 13:00h às 16:30h <br>
                 CNPJ: 44.558.856/0001-52
             </p>
-        </div>  
-        
+        </div>
+
 
     </footer>
-</body>
 
+    <script src="js/sub-menu.js"></script>
+</body>
 </html>
