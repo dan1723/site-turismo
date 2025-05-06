@@ -81,11 +81,9 @@ header p {
 
 
 
-/*CONFIGURAÇÃO DO MENU E SUBMENU*/
+/*CONFIGURAÇÃO DO MENU E SUB-MENU*/
 .navbar {
-  background-color: white;
   padding: 10px 20px;
-  border-top: 3px solid orange;
 }
 
 .menu {
@@ -103,11 +101,13 @@ header p {
 
 .menu > li > a {
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  padding: 5px 8px;
   display: inline-block;
   cursor: pointer;
+  margin-top: 14px;
+  font-size: 1.2em;
 }
 
 .dropdown {
@@ -115,7 +115,7 @@ header p {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #efeff6;
+  background-color: var(--cor0);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
   display: none;
@@ -123,6 +123,9 @@ header p {
   gap: 40px;
   z-index: 1000;
   transition: all 0.3s ease-in-out; /*Suaviza a exibição do submenu*/
+  width: 950px;
+  height: 250px;
+  border-radius: 16px;
 }
 
 .dropdown-column {
