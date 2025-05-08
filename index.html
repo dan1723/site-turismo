@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo de Promissâo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo de Promissâo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Secretária do Turismo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!--Configuração do Header-->
     <header>
         <h1>Departamento Municipal do Turismo de Promissão</h1>
 
@@ -28,44 +29,48 @@
                 <nalv class="navbar">
                     <ul class="menu" id="main-menu">
                         <li>
-                            <a href="#">Página Inicial</a>
+                            <a href="#" class="hover-menu">Página Inicial</a>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#">Menu <i class="fa-solid fa-caret-down"></i></a>
+                            <a href="#" class="hover-menu">Menu <i class="fa-solid fa-caret-down"></i></a>
                             <div class="dropdown">
                                 <div class="dropdown-column">
                                     <h4>Alugueis, Hospedagens & Eventos</h4>
+                                    <hr>
                                     <ul>
-                                        <li><a href="pages/magiaNatalina.html" target="_self">Alugueis de Ranchos e Pousadas</a></li>
-                                        <li><a href="pages/meiosdeHospedagem.html" target="_self">Meios de Hospedagem</a></li>
-                                        <li><a href="pages/calendárioDeEventos.html" target="_self">Calendário de Eventos</a></li>
+                                        <li><a href="pages/magiaNatalina.html" target="_self" class="hover-submenu">Alugueis de Ranchos e Pousadas</a></li>
+                                        <li><a href="pages/meiosdeHospedagem.html" target="_self" class="hover-submenu">Meios de Hospedagem</a></li>
+                                        <li><a href="pages/calendárioDeEventos.html" target="_self" class="hover-submenu">Calendário de Eventos</a></li>
                                     </ul>
                                 </div>
                                 <div class="dropdown-column">
                                     <h4>Passeios Cultarias, Entretenimento e Gastronomica</h4>
+                                    
+                                    <hr>
                                     <ul>
-                                        <li><a href="pages/rotaDasFrutas.html" target="_self">Rota das Frutas</a></li>
-                                        <li><a href="pages/rotaGastronomica.html" target="_self">Rota Gastronômica</a></li>
-                                        <li><a href="pages/rotaDaImigraçãoJaponesa.html" target="_self">Rota da Imigração Japonesa</a></li>
-                                        <li><a href="pages/rotaDaPeregrinacao.html" target="_self">Rota da Peregrinação (turismo religioso)</a></li>
-                                        <li><a href="pages/rotaTuristicaDosRios.html" target="_self">Rota Turistica dos Rios, Cachoeiras, Correntezas e Parques Ambientais</a></li>
+                                        <li><a href="pages/rotaDasFrutas.html" target="_self" class="hover-submenu">Rota das Frutas</a></li>
+                                        <li><a href="pages/rotaGastronomica.html" target="_self" class="hover-submenu">Rota Gastronômica</a></li>
+                                        <li><a href="pages/rotaDaImigraçãoJaponesa.html" target="_self" class="hover-submenu">Rota da Imigração Japonesa</a></li>
+                                        <li><a href="pages/rotaDaPeregrinacao.html" target="_self" class="hover-submenu">Rota da Peregrinação (turismo religioso)</a></li>
+                                        <li><a href="pages/rotaTuristicaDosRios.html" target="_self" class="hover-submenu">Rota Turistica dos Rios, Cachoeiras, Correntezas e Parques Ambientais</a></li>
                                     </ul>
                                 </div>
                                 <div class="dropdown-column">
                                     <h4>Mapas Turisticos, Ferias e Artesanato</h4>
+                                    <hr>
                                     <ul>
-                                        <li><a href="pages/mapasTurismoUrbano.html" target="_self">Mapa Turístico Urbano</a></li>
-                                        <li><a href="pages/mapasTurismoRural.html" target="_self">Atrações</a>Mapa Turístico Rural</li>
-                                        <li><a href="pages/feiraArtesanato.html" target="_self">Feira da agricultura Familiar e Artezanato</a></li>
+                                        <li><a href="pages/mapasTurismoUrbano.html" target="_self" class="hover-submenu">Mapa Turístico Urbano</a></li>
+                                        <li><a href="pages/mapasTurismoRural.html" target="_self" class="hover-submenu"</  a>Mapa Turístico Rural</li>
+                                        <li><a href="pages/feiraArtesanato.html" target="_self" class="hover-submenu">Feira da agricultura Familiar e Artesanato</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <a href="pages/conselhoMunicipalTurismo.html" target="_self">Conselho Municipal do Turismo</a>
+                            <a href="pages/conselhoMunicipalTurismo.html" target="_self" class="hover-menu">Conselho Municipal do Turismo</a>
                         </li>
                         <li>
-                            <a href="pages/galeriaFotos.html">Galeria de Fotos</a>
+                            <a href="pages/galeriaFotos.html" class="hover-menu">Galeria de Fotos</a>
                         </li>
                     </ul>
                 </nav>
@@ -73,6 +78,8 @@
         </section>
 
     </header>
+
+    <!--Configuração do main-->
     <main>
         <section>
             <h1>A História de Promissão</h1>
@@ -121,7 +128,7 @@
             <br>
             <picture>
                 <source media="(max-width: 670px)" srcset="imagens/cidade_de_Promissão.webp">
-                <img src="imagens/cidade_de_Promissão.webp" alt="Cidade de Promissâo">
+                <img src="assets/img/cidade_de_Promissão.webp" alt="Cidade de Promissâo">
             </picture>
 
         </section>
@@ -182,16 +189,18 @@
         </h2>
         <br>
         <div class="video">
-            <iframe width="560" height="315" src="videos/VID-20250301-WA0019.mp4" title="YouTube video player"
+            <iframe width="560" height="315" src="assets/videos/VID-20250301-WA0019.mp4" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </main>
+
+    <!--Configuração do Footer-->
     <footer>
         <!-- LOGO DO RODAPÉ -->
         <div class="logo">
-            <img src="logo de Promissâo.png" alt="Brasão da Prefeitura" class="logo">
+            <img src="assets/img/logo de Promissâo.png" alt="Brasão da Prefeitura" class="logo">
         </div>
         <!-- FIM LOGO RODAPÉ -->
 
