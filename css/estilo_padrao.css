@@ -183,20 +183,6 @@ header p {
   display: flex;
   /* flex-direction: column; */
 }
-
-/* Mobile ajustes */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-  }
-
-  .dropdown {
-    position: static;
-    flex-direction: column;
-    box-shadow: none;
-    padding: 10px 0;
-  }
-}
 /*****************************************************************************************/
 
 
@@ -315,3 +301,148 @@ div.footer-texto > p.slogan{
 /*****************************************************************************************/
 
 
+
+
+
+
+
+/*AJUSTES DE RESPONSIVIDADE DO SITE*/
+
+
+/* Responsividade para telas grandes */
+@media (min-width: 1025px) {
+  main {
+      max-width: 1000px;
+      margin: auto;
+  }
+
+  .navbar {
+      padding: 20px;
+  }
+
+  .menu {
+    gap: 40px;
+  }
+
+  .dropdown {
+      width: 1100px;
+  }
+
+  .video iframe {
+      width: 100%;
+      height: 500px;
+  }
+}
+
+/* Responsividade para tablets e telas médias */
+@media (max-width: 1024px) {
+  .menu {
+      display: block;
+      align-items: center;
+  }
+
+  .menu > li {
+      margin: 10px 0;
+  }
+
+  .hover-menu:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+  }
+  
+  .hover-submenu:hover{
+    color: white;
+  }
+
+  .dropdown {
+      width: 80%;
+      flex-direction: column;
+      box-shadow: none;
+      position: absolute;
+      height: 40.5em;
+      padding: 5px;
+  }
+
+  .video iframe {
+      width: 100%;
+      height: 400px;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 30px; /* Ajuste o tamanho da fonte */
+  }
+
+  main h1 {
+      font-size: 1.6em;
+  }
+
+  .menu {
+      display: block;
+      gap: 10px;
+      width: 100%;
+  }
+
+  .hover-menu:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+  }
+  
+  .hover-submenu:hover{
+    color: white;
+  }
+
+  .dropdown {
+      position: absolute;
+      width: 85%;
+      height: 40.5em;
+      flex-direction: column;
+      box-shadow: none;
+      padding: 5px;
+  }
+
+  .dropdown-column {
+      min-width: 100%;
+  }
+
+  .video iframe {
+      width: 100%;
+      height: 200px;
+  }
+}
+
+
+/* Imagens Responsivas */
+img, .video iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajuste de fonte geral para telas menores */
+body {
+  font-size: 1rem; /* Ajuste de fonte base */
+}
+
+header p, main p {
+  font-size: 1.1em;
+}
+
+
+
+
+/* @media (max-width: 768px) {
+
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .dropdown {
+    position: static;
+    flex-direction: column;
+    box-shadow: none;
+    padding: 10px 0;
+  }
+} */
