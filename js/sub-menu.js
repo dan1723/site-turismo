@@ -28,18 +28,3 @@ document.querySelectorAll('.has-dropdown > a').forEach(link => {
   });
 
 
-// // Seleciona o botão de menu hamburguer
-// const menuButton = document.querySelector('#menu-toggle');
-// const menu = document.querySelector('.menu');
-
-// // Adiciona evento de clique para abrir/fechar o menu
-// menuButton.addEventListener('click', function() {
-//     menu.classList.toggle('active');
-// });
-
-// // Fecha o menu ao clicar fora dele
-// document.addEventListener('click', function (e) {
-//     if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
-//         menu.classList.remove('active');
-//     }
-// });
