@@ -256,7 +256,7 @@ div.video{
   position: relative;
 }
 
-div.video > iframe{
+div.video > video{
   position: absolute;
   top: 5%;
   left: 5%;
@@ -269,35 +269,52 @@ div.video > iframe{
 
 
 /*CONFIGURAÇÕES DO FOOTER*/
+
 footer{
-  background-color: var(--cor5);
+  /* display: flex; */
+  padding: 0%;
+  margin-top: 30px;
+  width: 100vw;
+  height: 400px;
+  background: linear-gradient(to bottom, #cecece, #c5c3c3, #908f8f);
+
+}
+
+.container-rede-social{
+  display: flex;
+  padding: 0%;
+  width: 100vw;
+  height: 80px;
+  background-color: var(--cor4);
+}
+
+.container-rede-social > h2{
+  position: relative;
+  margin: 10px;
+  top: 0.50em;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
   position: relative;
+  display: inline-block;
+  top: 0.5em;
+  left: 10.2em;
+  list-style-type: none;
+  margin: 5px;
 }
 
-footer div.logo-rodape{
-  position: relative;
-  left: 82.5vw;
+.image{
+  width: 300px;
+  height: 273px;
 }
 
-
-div.footer-texto > h2{
-  font-family: var(--fonte-padrao);
-  padding: 10px;
-  font-style: italic;
-  font-size: 2em;
-  
+.image img{
+  width: 23vw;
+  height: 43vh;
 }
 
-div.footer-texto > p.slogan{
-  font-family: var(--fonte-pesonalizada);
-  font-weight: bolder;
-  font-style: italic;
-  font-size: 1.5em;
-  padding-left: 15px;
-  position: relative;
-  bottom: 3.5vh;
-}
 /*****************************************************************************************/
 
 
