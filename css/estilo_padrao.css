@@ -324,39 +324,55 @@ ul{
   /* margin: 5px; */
 }
 
-.info-container{
-  display: flex;
-  position: absolute;
-}
+
 
 .dados{
-  position: relative;
+  position: absolute;
   width: 528px;
   height: 252px;
   border: 2px solid black;
   left: 251px;
   right: 9px;
-  top: 55px;
+  top: 519.64vh;
   bottom: 17px;
+
+  display: flex;  /* ativa o Flexbox */
+  flex-direction: column; 
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+}
+
+.dados > p{
+  color: rgb(66, 64, 64);
+  font-family: var(--fonte-padrao);
+  font-size: 1.1rem;
+  padding-left: 15px;
+  line-height: 40px;
 }
 
 
 .mapa{
-  position: relative;
-  width: 591px;
-  height: 252px;
+  position: absolute;
+  width: 588px;
+  height: 255px;
   border: 2px solid black;
-  top: 55px;
+  top: 519.5vh;
   bottom: 5px;
-  left: 249px;
+  left: 777px;
   right: 5px;
 }
 
+
 .direitos-autorais{
-  width: 200px;
-  height: 200px;
+  position: absolute;
+  width: 101%;
+  height: 36px;
   border: 2px solid black;
+  top: 559.5vh;
 }
+
+
+
 
 
 
