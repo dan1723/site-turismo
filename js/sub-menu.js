@@ -27,4 +27,3 @@ document.querySelectorAll('.has-dropdown > a').forEach(link => {
     }
   });
 
-

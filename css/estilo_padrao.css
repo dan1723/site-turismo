@@ -5,6 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sriracha&display=swap');
+
 @font-face {
   font-family: 'Android';
   src: url('/fontes/idroid.otf') format('opentype');
@@ -19,6 +21,8 @@
   font-style: normal;
 }
 
+
+
 :root {
   --cor0: #c5ebd6;
   --cor1: #83e1ad;
@@ -31,6 +35,7 @@
   --fonte-destaque: "Bebas Neue", serif;
   --fonte-android: 'Android', serif;
   --fonte-pesonalizada: 'Dancing Script', serif;
+  
 }
 
 * {
@@ -321,7 +326,6 @@ ul{
 .image img{
   position: relative;
   bottom: -56px;
-  /* margin: 5px; */
 }
 
 
@@ -330,7 +334,6 @@ ul{
   position: absolute;
   width: 528px;
   height: 252px;
-  border: 2px solid black;
   left: 251px;
   right: 9px;
   top: 519.64vh;
@@ -350,12 +353,35 @@ ul{
   line-height: 40px;
 }
 
+.fa-solid{
+  position: relative;
+  align-self: flex-start;
+  top: 26px;
+  left: 9px;
+  color: #333;
+}
+
+.fa-at{
+  position: relative;
+  left: 129px;
+}
+
+.fa-phone{
+  position: relative;
+  left: 192px;
+}
+
+.fa-clock-rotate-left{
+  position: relative;
+  left: 69px;
+}
+
 
 .mapa{
   position: absolute;
   width: 588px;
   height: 255px;
-  border: 2px solid black;
+  border: 2px inset rgba(0, 0, 0, 0.422);
   top: 519.5vh;
   bottom: 5px;
   left: 777px;
@@ -364,16 +390,31 @@ ul{
 
 
 .direitos-autorais{
+  display: flex;
   position: absolute;
   width: 101%;
   height: 36px;
-  border: 2px solid black;
   top: 559.5vh;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid rgb(74, 68, 68);
+  background-color: #2fa8658f;
 }
 
+.Copyright a{
+ text-decoration: none;
+ color: inherit;
+ font-family: 'Sriracha', Tahoma, Geneva, Verdana, sans-serif;
+ font-style: italic;
+}
 
+.Copyright a:hover{
+  color: #494848;
+}
 
-
+.Copyright{
+  font-style: italic;
+}
 
 
 /*****************************************************************************************/
@@ -410,6 +451,7 @@ ul{
       width: 100%;
       height: 500px;
   }
+
 }
 
 /* Responsividade para tablets e telas médias */
@@ -506,21 +548,3 @@ body {
 header p, main p {
   font-size: 1.1em;
 }
-
-
-
-
-/* @media (max-width: 768px) {
-
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .dropdown {
-    position: static;
-    flex-direction: column;
-    box-shadow: none;
-    padding: 10px 0;
-  }
-} */
