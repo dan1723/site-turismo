@@ -33,7 +33,8 @@
                             <a href="#" class="hover-menu">Página Inicial</a>
                         </li>
                         <li class="has-dropdown">
-                            <a href="#" class="hover-menu">Menu <img src="assets/icons/down-chevron.png" alt="seta-para-baixo" class="seta"></a>
+                            <a href="#" class="hover-menu">Menu <img src="assets/icons/down-chevron.png"
+                                    alt="seta-para-baixo" class="seta"></a>
                             <div class="dropdown">
                                 <div class="dropdown-column">
                                     <h4>Alugueis, Hospedagens & Eventos</h4>
@@ -88,7 +89,7 @@
                             <a href="pages/galeriaFotos.html" class="hover-menu">Galeria de Fotos</a>
                         </li>
                     </ul>
-                </nav>
+                    </nav>
             </div>
         </section>
 
@@ -142,8 +143,20 @@
 
             <br>
             <picture>
-                <source media="(max-width: 670px)" srcset="imagens/cidade_de_Promissão.webp">
-                <img src="assets/img/cidade_de_Promissão.webp" alt="Cidade de Promissâo">
+                <!-- Versão mobile -->
+                <source media="(max-width: 480px)" srcset="assets/img/cidade_de_Promissão-mobile.webp">
+
+                <!-- Versão tablet -->
+                <source media="(max-width: 1023px)" srcset="assets/img/cidade_de_Promissão-tablet.webp">
+
+                <!-- Versão desktop padrão -->
+                <img src="assets/img/cidade_de_Promissão.webp" alt="Cidade de Promissão" class="img-responsiva">
+            </picture>
+
+            <picture>
+                <source media="(max-width: 768px)" srcset="assets/img/cidade_mobile.webp" type="image/webp">
+                <source srcset="assets/img/cidade_de_Promissão.jpg" type="image/jpeg">
+                <img src="assets/img/cidade_de_Promissão.jpg" alt="Cidade de Promissão" class="img-responsiva">
             </picture>
 
         </section>

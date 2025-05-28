@@ -254,10 +254,20 @@ main a{
 }
 
 /*configurações da imagem do main*/
-main img{
+
+.img-responsiva {
   width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: cover; /* opcional para recorte suave */
+  border-radius: 10px; /* opcional para estética */
+}
+
+main img{
+  /* width: 100%;
   height: 70vh;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
 }
 
 a.externo::after {
@@ -433,192 +443,153 @@ footer{
 /*****************************************************************************************/
 
 
-
-
-
-
-
 /*AJUSTES DE RESPONSIVIDADE DO SITE*/
 
 
-/* Responsividade para telas grandes */
-@media (min-width: 1025px) {
-  main {
-      max-width: 950px;
-      margin: auto;
+/* Breakpoints tradicionais com max-width */
+
+/* 🟢 Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 18px;
   }
 
-  .navbar {
-      padding: 20px;
+  header h1 {
+    font-size: 30px;
   }
 
   .menu {
-    gap: 40px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .dropdown {
-      width: 1100px;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
   }
 
-  .video iframe {
-      width: 100%;
-      height: 500px;
+  .has-dropdown{
+    width: 50%;
   }
 
-}
-
-/* Responsividade para tablets e telas médias */
-@media (max-width: 1024px) {
-  .menu {
-      display: block;
-      align-items: center;
-  }
-
-  .menu > li {
-      margin: 10px 0;
-  }
-
-  .hover-menu:hover{
-    background-color: var(--cor2);
-    color: var(--cor5);
+  .hover-submenu:hover{
+  color: white;
   }
   
-  .hover-submenu:hover{
-    color: white;
-  }
-
-  .dropdown {
-      width: 80%;
-      flex-direction: column;
-      box-shadow: none;
-      position: absolute;
-      height: 40.5em;
-      padding: 5px;
-  }
-
-  .video iframe {
-      width: 100%;
-      height: 400px;
-  }
-
-
-
-
   .footer-container {
     flex-direction: column;
-    align-items: center;
     height: auto;
-    padding: 20px;
   }
 
-  .footer-rede-social {
-    flex-direction: column;
-    align-items: center;
+  .footer-rede-social{
+    width: 100%;
+    height: 12%;
+    font-size: 0.5em;
+  }
+
+  
+
+  .image img, .mapa, .dados {
+    position: static;
+    transform: none;
+    width: 100%;
     height: auto;
-    padding: 10px;
-    text-align: center;
   }
 
   .social-icons {
-    justify-content: center;
-    left: 0;
-    margin-top: 10px;
+    flex-direction: row;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transform: translate(1%, 1%);
   }
 
-  .image, .dados, .mapa {
-    position: static;
-    width: 90%;
-    margin: 10px 0;
-  }
-
-  .direitos-autorais {
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
+  .social-icons img{
+    width: 35px;
   }
 }
 
 
-
-/* Responsividade para celulares */
-@media (max-width: 768px) {
-  header h1 {
-      font-size: 30px; /* Ajuste o tamanho da fonte */
-  }
-
-  main h1 {
-      font-size: 1.6em;
-  }
-
+/* 🟡 Celulares médios (481px – 767px) */
+@media (max-width: 767px) {
   .menu {
-      display: block;
-      gap: 10px;
-      width: 100%;
-  }
-
-  .hover-menu:hover{
-    background-color: var(--cor2);
-    color: var(--cor5);
-  }
-  
-  .hover-submenu:hover{
-    color: white;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .dropdown {
-      position: absolute;
-      width: 85%;
-      height: 44.5em;
-      flex-direction: column;
-      box-shadow: none;
-      padding: 5px;
-  }
-
-  .dropdown-column {
-      min-width: 100%;
-  }
-
-  .video iframe {
-      width: 100%;
-      height: 200px;
-  }
-
-
-
-
-  .footer-rede-social h2 {
-    font-size: 1rem;
-  }
-
-  .dados p {
-    font-size: 0.95rem;
-    text-align: center;
-  }
-
-  .social-icons img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .mapa iframe {
+    flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: auto;
+  }
+
+  .footer-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dados, .mapa, .image {
+    transform: none;
+    position: static;
+    width: 100%;
   }
 }
 
 
-/* Imagens Responsivas */
-img, .video iframe {
-  max-width: 100%;
-  height: auto;
+
+/* 🔵 Tablets (768px – 1023px) */
+@media (max-width: 1023px) {
+  .dropdown {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .dados, .mapa {
+    width: 48%;
+    transform: none;
+    position: static;
+  }
+
+  .image {
+    display: none; /* opcional para tablets */
+  }
 }
 
-/* Ajuste de fonte geral para telas menores */
-body {
-  font-size: 1rem; /* Ajuste de fonte base */
+
+
+/* 🟣 Laptops/Desktop médios (1024px – 1439px) */
+@media (max-width: 1439px) {
+  .mapa {
+    width: 45%;
+    transform: none;
+    position: static;
+  }
+
+  .dados {
+    width: 45%;
+    transform: none;
+    position: static;
+  }
 }
 
-header p, main p {
-  font-size: 1.1em;
-}
+/* 🔴 Telas grandes (1440px e acima) */
+/* Não é necessário `max-width`, pois os estilos padrões já cobrem telas grandes */
+
+
+
+
+
+
+
+
+
+
